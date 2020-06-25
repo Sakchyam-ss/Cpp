@@ -1,3 +1,9 @@
+/*
+Create a class named SavingsAccount. Provide fields for the customer (use the Person class from Exercise 3), account number, balance, and interest rate.
+Provide two constructors. One requires a customer and sets each numeric field to 0; the other requires a customer and an account number and sets the account’s opening
+balance to $100 at 3% interest. Include a function that displays an account’s data fields. Write a main()function that instantiates one SavingsAccount object of each
+type and displays their values. Save the file as SavingsAccount.cpp.
+*/
 /************************************************************
 //Connecting libraries										*
 //This program demonstrates a Saving Account				*
