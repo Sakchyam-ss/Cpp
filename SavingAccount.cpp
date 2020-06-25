@@ -65,7 +65,7 @@ int main()
 	//displaying data of object s
 	s.display();
 	//creating object by passing arguement
-	SavingAccount s1("Lama","Pravat", "44600", 1234567890, 100, 3);
+	SavingAccount s1("Shrestha","Sakchyam", "44300", 1234567890, 200, 2);
 	//displaying data of object s1
 	s1.display();
 }
