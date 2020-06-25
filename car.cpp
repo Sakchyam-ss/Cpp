@@ -1,3 +1,9 @@
+/*
+Create a class named Car. The Car class contains a static integer field named count. Create a constructor that adds 1 to the count and displays the count each time a Car is
+created. Create a destructor that subtracts 1 from the count and displays the count each time a Car goes out of scope. Write a main()function that declares an array of five 
+Car objects. Output consists of five constructor messages and five destructor messages, each displaying the current count, similar to the output in the following figure. Save 
+the file as Car.cpp.
+*/
 /************************************************************
 //Connecting libraries										*
 //This program demonstrates a Car class						*
