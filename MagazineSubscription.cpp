@@ -19,7 +19,7 @@ class Date
 	 	//creating function to display value of date class object
 		void display() 
 		{
-			cout << month <<"/" <<day <<"/"<< year <<endl;
+			cout <<"Date : "<<day<<"/"<<month<<"/"<<year<<endl;
 		}	
 };
 
@@ -45,8 +45,35 @@ class MagazineSubscription
 		Date suscriber;
 		
 	public:
-		MagazineSubscription(Person a){
-			
-		}	
+		MagazineSubscription(Person a, Date startDate, Date endDate){	
+		}
+		
+		void display()
+		{
+			cout << "Subscriber Details :" <<endl;
+			costumer.display();
+			cout << "Subscribed Start Date : "<<endl;
+			suscriber.display();
+			cout << "Subscribed End Date : "<<endl;
+			suscriber.display();
+		}
 };
+
+int main()
+{
+	Person p1;
+	p1.firstname = "Sakchyam";
+	p1.lastname = "Shrestha";
+	p1.zipcode = "44600";
+	Date d1;
+	d1.day = 1;
+	d1.month = 1;
+	d1.year = 2000;
+	MagazineSubscription m1(p1);
+	m1.display();
+	cout<<endl;
+	
+	return 0;
+		
+}
 
