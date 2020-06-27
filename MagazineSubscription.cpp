@@ -41,21 +41,25 @@ class Person
 class MagazineSubscription
 {
 	private:
-		Person costumer;
-		Date suscriber;
-		
+		Person customer;
+		Date start;
+		Date end;
+			
 	public:
-		MagazineSubscription(Person a, Date startDate, Date endDate){	
+		MagazineSubscription(Person c, Date startDate, Date endDate){
+			customer= c;
+			start = startDate;
+			end = endDate;			
 		}
 		
 		void display()
 		{
 			cout << "Subscriber Details :" <<endl;
-			costumer.display();
-			cout << "Subscribed Start Date : "<<endl;
-			suscriber.display();
+			customer.display();
+			cout << "Subscribed Start Date : " <<endl;
+			start.display();
 			cout << "Subscribed End Date : "<<endl;
-			suscriber.display();
+			end.display();
 		}
 };
 
@@ -65,11 +69,18 @@ int main()
 	p1.firstname = "Sakchyam";
 	p1.lastname = "Shrestha";
 	p1.zipcode = "44600";
+
 	Date d1;
 	d1.day = 1;
 	d1.month = 1;
 	d1.year = 2000;
-	MagazineSubscription m1(p1);
+
+	Date d2;
+	d2.day = 31;
+	d2.month = 12;
+	d2.year = 2002;
+	
+	MagazineSubscription m1(p1, d1, d2);
 	m1.display();
 	cout<<endl;
 	
